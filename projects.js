@@ -55,7 +55,7 @@ const projects = {
 		result: 'From prototype logic to <span>a working recognition flow.</span>'
 	},
 	automation: {
-		field: '01 / AI AUTOMATION',
+		field: '07 / AI AUTOMATION',
 		title: 'AI <em>Receptionist</em>',
 		discipline: 'AI Automation',
 		focus: 'Call handling automation',
@@ -66,7 +66,7 @@ const projects = {
 		result: '24/7 call handling with <span>less manual support load.</span>'
 	},
 	knowledge: {
-		field: '02 / AI AUTOMATION',
+		field: '06 / AI AUTOMATION',
 		title: 'Lead Gen <em>Chatbot</em>',
 		discipline: 'AI Automation',
 		focus: 'Lead capture and qualification',
@@ -113,7 +113,7 @@ const projects = {
 		metrics: [['5', 'stage pipeline, intake to delivery'], ['100%', 'of state changes audit-logged'], ['0', 'invented claims — gaps flagged'], ['2-day', 'automatic follow-up']]
 	},
 	content: {
-		field: '06 / AI AUTOMATION',
+		field: '02 / AI AUTOMATION',
 		title: 'AI Content <em>Research Agent</em>',
 		discipline: 'AI Automation',
 		focus: 'Research and publishing pipeline',
@@ -125,7 +125,7 @@ const projects = {
 		metrics: [['1 → 4', 'idea to article + 3 channel drafts'], ['3', 'automated revise loops per stage'], ['Top 3–5', 'reranked sources per piece'], ['8', 'end-to-end test scenarios']]
 	},
 	outreach: {
-		field: '07 / AI AUTOMATION',
+		field: '01 / AI AUTOMATION',
 		title: 'AI Lead Research <em>Agent</em>',
 		discipline: 'AI Automation',
 		focus: 'Lead research and outreach',
