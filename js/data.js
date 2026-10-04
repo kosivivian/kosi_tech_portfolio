@@ -64,7 +64,7 @@ SITE.projects = [
 		kind: 'AI agent',
 		title: 'AI Lead Research <em>Agent</em>',
 		overview: 'A one-line brief becomes a vetted, source-cited lead list with draft outreach.', // TODO
-		cover: 'assets\covers\Screenshot 2026-10-04 221214.png',
+		cover: 'assets/covers/Screenshot 2026-10-04 221214.png',
 		visual: 'flow', tone: 'clay',
 		year: '', type: 'Agent + web app',
 		focus: 'Lead research and outreach',
@@ -128,7 +128,7 @@ SITE.projects = [
 		kind: 'AI agent',
 		title: 'AI Content <em>Research Agent</em>',
 		overview: 'One idea becomes a cited article plus LinkedIn, X, and email drafts.', // TODO
-		cover: 'assets\covers\Screenshot 2026-10-04 221417.png',
+		cover: 'assets/covers/Screenshot 2026-10-04 221417.png',
 		visual: 'flow', tone: 'wine',
 		year: '', type: 'Agent pipeline + web app',
 		focus: 'Research and publishing pipeline',
@@ -148,7 +148,7 @@ SITE.projects = [
 		kind: 'AI agent',
 		title: 'AI Proposal <em>Generator</em>',
 		overview: 'Discovery calls turned into on-brand, approved, tracked client proposals.', // TODO
-		cover: 'assets\covers\Screenshot 2026-10-04 222218.png',
+		cover: 'assets/covers/Screenshot 2026-10-04 222218.png',
 		visual: 'window', tone: 'blush',
 		year: '', type: 'Full-stack web app',
 		focus: 'Sales document automation',
@@ -186,7 +186,7 @@ SITE.projects = [
 		kind: 'Automation',
 		title: 'AI <em>Receptionist</em>',
 		overview: '24/7 call handling that books, updates, and logs appointments automatically.', // TODO
-		cover: 'assets\covers\Screenshot 2026-10-04 221600.png',
+		cover: 'assets/covers/Screenshot 2026-10-04 221600.png',
 		visual: 'wave', tone: 'wine',
 		year: '', type: 'Voice agent',
 		focus: 'Call handling automation',
