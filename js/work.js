@@ -106,13 +106,26 @@
 			</li>`).join(''));
 	}
 
+	/* ---------- Tool icons (Simple Icons, monogram fallback) ---------- */
+	const monogram = name => name.length <= 3 ? name : name.split(/[\s.]+/).length > 1 ? name.split(/[\s.]+/).slice(0, 2).map(w => w[0]).join('') : name.slice(0, 2);
+	const toolIcon = (name, icon) => icon
+		? `<span class="ico"><i style="--src:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/${icon}.svg)"></i></span>`
+		: `<span class="ico mono">${esc(monogram(name))}</span>`;
+
+	/* ---------- Home: hero tool marquee (decorative; the stack section carries the content) ---------- */
+	const heroMarquee = document.getElementById('hero-marquee');
+	if (heroMarquee) {
+		const all = SITE.stack.flatMap(g => g.tools);
+		const set = all.map(([name, icon]) => `<span class="hm-item">${toolIcon(name, icon)}${esc(name)}</span>`).join('');
+		heroMarquee.innerHTML = `<div class="hm-move" style="--dur:${all.length * 3}s"><div class="hm-set">${set}</div><div class="hm-set">${set}</div></div>`;
+	}
+
 	/* ---------- Home: stack rails ---------- */
 	const rails = document.getElementById('rails');
 	if (rails) {
-		const monogram = name => name.length <= 3 ? name : name.split(/[\s.]+/).length > 1 ? name.split(/[\s.]+/).slice(0, 2).map(w => w[0]).join('') : name.slice(0, 2);
 		const pill = ([name, icon, use], hidden) => `
 			<span class="pill${hidden ? ' dup' : ''}" ${hidden ? 'aria-hidden="true"' : 'tabindex="0"'}>
-				${icon ? `<span class="ico"><i style="--src:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/${icon}.svg)"></i></span>` : `<span class="ico mono">${esc(monogram(name))}</span>`}
+				${toolIcon(name, icon)}
 				${esc(name)}<span class="pill-tip" role="tooltip">${esc(use)}</span>
 			</span>`;
 		rails.innerHTML = SITE.stack.map(({ group, tools }) => {
